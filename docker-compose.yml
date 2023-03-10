@@ -1,0 +1,6 @@
+services:
+  vtt:
+    image: ngrok/ngrok:latest
+    command: "http host.docker.interal:30000"
+    env_file:
+      - .env
